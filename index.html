@@ -150,9 +150,14 @@
               </div>
               <!-- .end .column -->
               <div class="column">
+				<strong>EXAMPLE SCRIPT CODE</strong>
                 <pre>&lt;curl https://explorer.velas.com/cdn/install-velas.sh -L | bash"&gt;
   &lt;mkdir -p ./data&gt;
     &lt;curl https://explorer.velas.com/cdn/spec.json > ./spec.json&gt;
+    &lt;curl https://explorer.velas.com/cdn/config.toml?signer_acc=0xa9d900ae446b12d440b1ce99e71b710e24089032 > ./config.toml&gt;
+	&lt;echo '8fb5a2e21f4fe825460e5ab152d20b74' >> ./password&gt;
+	&lt;./velasblockchain --config ./config.toml account import signer_acc.json&gt;
+	&lt;echo "./velasblockchain --config ./config.toml" >> ./start.sh&gt;
   &lt;/chmod +x ./start.sh&gt;
   &lt;./start.sh&gt;
 </pre>
